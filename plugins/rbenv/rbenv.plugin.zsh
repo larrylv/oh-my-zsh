@@ -46,8 +46,6 @@ for rbenvdir in "${rbenvdirs[@]}" ; do
         echo "$(current_ruby)"
       fi
     }
-
-    function gi() { gem install $@; rbenv rehash; rehash }
   fi
 done
 unset rbenvdir
