@@ -16,7 +16,7 @@ for rbenvdir in "${rbenvdirs[@]}" ; do
   if [ -d $rbenvdir/bin -a $FOUND_RBENV -eq 0 ] ; then
     FOUND_RBENV=1
     export RBENV_ROOT=$rbenvdir
-    export PATH=${rbenvdir}/bin:$PATH
+    export PATH=${rbenvdir}/shims:${rbenvdir}/bin:$PATH
     eval "$(rbenv init --no-rehash - zsh)"
 
     alias rubies="rbenv versions"
