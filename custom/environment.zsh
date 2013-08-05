@@ -5,7 +5,8 @@ HISTFILE=~/.zsh_history
 HISTSIZE=1000000
 SAVEHIST=HISTSIZE
 
-[[ -s "/opt/local/bin" ]] && export PATH=/opt/local/bin:$PATH
+# MacPorts is uninstalled, so no need to add `/opt/local/bin` to $PATH
+# [[ -s "/opt/local/bin" ]] && export PATH=/opt/local/bin:$PATH
 [[ -s "/usr/local/bin" ]] && export PATH=/usr/local/bin:$PATH
 [[ -s "/usr/local/sbin" ]] && export PATH=/usr/local/sbin:$PATH
 
