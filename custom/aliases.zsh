@@ -8,6 +8,6 @@ alias rb='rbenv'
 alias be='bundle exec'
 alias pt='pstree'
 alias bi='bundle install --path=vendor/bundle --binstubs=.binstubs'
-alias gi='gem install'
 alias vless='/usr/local/opt/vim/share/vim/vim74/macros/less.sh'
 alias u='j'
+gi() { gem install $@; rbenv rehash; rehash }
