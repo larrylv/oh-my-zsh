@@ -1,3 +1,3 @@
 bindkey "^y" beginning-of-line
-bindkey "^b" backward-word
-bindkey "^f" forward-word
+bindkey "^1" backward-word
+bindkey "^0" forward-word
