@@ -6,5 +6,6 @@ setTerminalTitle () {
   echo -ne "\033]$mode;$@\007"
 }
 # set_both_title   () { setTerminalTitle 0 $@; }
-set_tab_title    () { setTerminalTitle 1 $@; }
+s             () { setTerminalTitle 1 $@; }
+set_tab_title () { setTerminalTitle 1 $@; }
 # set_window_title () { setTerminalTitle 2 $@; }
