@@ -16,6 +16,8 @@ SAVEHIST=HISTSIZE
 # Thank god I won't type `bundle exec` or its alias `be` any more.
 export PATH=.binstubs:$PATH
 
+export PATH=$PATH:/usr/local/Cellar/go/1.2/libexec/bin
+
 export EDITOR=vim
 
 export LC_ALL=en_US.UTF-8
