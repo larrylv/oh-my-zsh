@@ -14,4 +14,5 @@ alias tailf='tail -f'
 alias gtags='ctags -R --languages=-javascript --exclude=.git --exclude=log --exclude=target --fields=+iaS --extra=+q .'
 alias mcopy='reattach-to-user-namespace pbcopy'
 alias mpaste='reattach-to-user-namespace pbpaste'
+alias ctt='cp ~/.tmux.sh.example .tmux.sh'
 gi() { gem install $@; rbenv rehash; rehash }
