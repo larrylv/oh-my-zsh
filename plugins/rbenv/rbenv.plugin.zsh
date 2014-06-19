@@ -43,11 +43,11 @@ for rbenvdir in "${rbenvdirs[@]}" ; do
     }
 
     function rbenv_prompt_info() {
-      if [[ -n $(current_gemset) ]] ; then
-        echo "$(current_ruby)@$(current_gemset)"
-      else
+      # if [[ -n $(current_gemset) ]] ; then
+      #   echo "$(current_ruby)@$(current_gemset)"
+      # else
         echo "$(current_ruby)"
-      fi
+      # fi
     }
   fi
 done
