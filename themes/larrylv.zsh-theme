@@ -12,10 +12,10 @@ green="$fg_bold[green]"
 light_green="$fg[green]"
 blue="$fg_bold[blue]"
 
-ZSH_THEME_GIT_PROMPT_PREFIX="$blue git:($yellow"
+ZSH_THEME_GIT_PROMPT_PREFIX="$cyan git:($magenta"
 ZSH_THEME_GIT_PROMPT_SUFFIX="%{$reset_color%}"
-ZSH_THEME_GIT_PROMPT_CLEAN="$blue) $green✔ "
-ZSH_THEME_GIT_PROMPT_DIRTY="$blue) $red✗"
+ZSH_THEME_GIT_PROMPT_CLEAN="$cyan) $green✔ "
+ZSH_THEME_GIT_PROMPT_DIRTY="$cyan) $red✗"
 ZSH_THEME_GIT_PROMPT_STASH=" $magenta#"
 ZSH_THEME_GIT_PROMPT_NOSTASH=""
 
@@ -32,5 +32,5 @@ function git_prompt_info() {
   echo "$ZSH_THEME_GIT_PROMPT_PREFIX${ref#refs/heads/}$(parse_git_dirty)$(parse_git_stash)$ZSH_THEME_GIT_PROMPT_SUFFIX"
 }
 
-PROMPT=$'%{$cyan%}➜  %{$magenta%}%~ %{%{$blue%}ruby:($yellow$(rbenv_prompt_info)%{$blue%})%}%{$(git_prompt_info)%}%{$blue%}%{$reset_color%}
+PROMPT=$'%{$yellow%}➜  %{$blue%}%~ %{%{$cyan%}ruby:($magenta$(rbenv_prompt_info)%{$cyan%})%}%{$(git_prompt_info)%}%{$blue%}%{$reset_color%}
 %{$light_green%}\$%{$reset_color%} '
