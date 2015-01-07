@@ -15,6 +15,7 @@ alias gtags='ctags -R --languages=-javascript --exclude=.git --exclude=log --exc
 alias mcopy='reattach-to-user-namespace pbcopy'
 alias mpaste='reattach-to-user-namespace pbpaste'
 alias ctt='cp ~/.tmux.sh.example .tmux.sh'
-alias ag='ack -H --smart-case --column --ignore-dir=.binstubs --ignore-dir=vendor --ignore-dir=log --ignore-dir=tmp --ignore-file=is:Session.vim'
+alias ag='ack -H --smart-case --column --ignore-dir=.binstubs --ignore-dir=vendor --ignore-dir=log --ignore-dir=tmp --ignore-file=is:Session.vim --ignore-file=is:tags'
+alias t='git ls-files | ack --smart-case --no-column --noenv'
 alias vs='vim -S Session.vim'
 gi() { gem install $@; rbenv rehash; rehash }
